@@ -1,0 +1,19 @@
+# .github/release.yml
+
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+categories:
+  - title: '🚀 Enhancements'
+    labels:
+      - 'feat'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+  - title: '🧹 Maintenance'
+    labels:
+      - 'chore'
+template: |
+  ## What's Changed
+
+  $CHANGES
